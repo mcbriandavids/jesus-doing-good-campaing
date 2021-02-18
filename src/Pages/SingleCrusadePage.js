@@ -14,7 +14,7 @@ export default class SingleCrusadePage extends Component {
 		};
 	}
 	static contextType = CrusadeContext;
-	componentDidMount() {}
+
 	render() {
 		const { getCrusade } = this.context;
 		const crusade = getCrusade(this.state.slug);
@@ -33,7 +33,7 @@ export default class SingleCrusadePage extends Component {
 			<>
 				<StyledHero img={images[0] || this.state.defaultBcg}>
 					<Banner title={name}>
-						<Link to='/crusades' className='btn-primary'>
+						<Link to='/crusades' className='btn-primary text-decoration-none'>
 							back to crusades
 						</Link>
 					</Banner>
@@ -47,7 +47,7 @@ export default class SingleCrusadePage extends Component {
 					</div>
 					<div className='single-crusade-images'>
 						{images.map((item, index) => {
-							return <img src={item} alt={name} />;
+							return <img src={item} alt={name} key={index} />;
 						})}
 					</div>
 				</section>

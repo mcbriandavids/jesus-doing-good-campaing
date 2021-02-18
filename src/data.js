@@ -15,12 +15,6 @@ import crusade10 from './images/details-17.jpeg';
 import crusade11 from './images/details-12.jpeg';
 import crusade12 from './images/details-17.jpeg';
 import crusade13 from './images/igbira-camp.jpeg';
-import crusade22 from './images/jdg-1.jpeg';
-import crusade23 from './images/jdg-2.jpeg';
-import crusade24 from './images/jdg-3.jpeg';
-import crusade25 from './images/jdg-4.jpeg';
-import crusade26 from './images/jdg-5.jpeg';
-import crusade27 from './images/jdg-6.jpeg';
 import crusade28 from './images/jdg-7.jpeg';
 import crusade29 from './images/jdg-8.jpeg';
 import crusade30 from './images/jdg-9.jpeg';
@@ -40,7 +34,7 @@ import crusade19 from './images/commissioning-2.jpeg';
 import crusade20 from './images/commissioning-3.jpeg';
 import crusade21 from './images/commissioning-4.jpeg';
 
-const data = [
+export const items = [
 	{
 		sys: {
 			id: 1
@@ -50,7 +44,7 @@ const data = [
 			slug: 'aviele-restorations-crusade',
 			featured: true,
 			description:
-				'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+				'Aviele Restoration crusade was held at a place called tomatoes garrage(almost an impossible place for such programme, due to its position in the city and the fact that it is controlled by the indigenes of the land who are basically muslims). God saved many people including muslims, there were recorded numbers of healings and deliverance. Tog God be the Glory',
 
 			images: [
 				{
@@ -123,7 +117,7 @@ const data = [
 			slug: 'egbere-crusade',
 			featured: false,
 			description:
-				'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+				'Egbigere is located at Akoko-Edo local government of Edo state, Nigeria. Jesus Doing Good Campaign stormed the village on the  19th and 20th December , 2019. Over eighty came out in their number to hear the word of God, There were notable miracles and healings. After the crusade, clothes were distributed to women. To God be the Glory',
 
 			images: [
 				{
@@ -196,7 +190,7 @@ const data = [
 			slug: 'tiv-camp-crusade',
 			featured: true,
 			description:
-				"Jesus Doing good at Tiv camp, Ewora; (14th February, 2019. It was valentine's day and the only way to show our love for Jesus was to embark on a soul winning outreac. We travelled on a dusty road with bikes (for over 10km) to Tiv farm settlement at Ewora. The whole Camp gave thrit life to christ to the glory of God ",
+				"Jesus Doing good at Tiv camp, Ewora; (14th February, 2019. It was valentine's day and the only way to show our love for Jesus was to embark on a soul winning outreach. We travelled on a dusty road with bikes (for over 10km) to Tiv farm settlement at Ewora. The whole Camp gave their life to christ to the glory of God. Also, the chief of the campaign remarked that no such outreach has ever been held on the camp, they were so grateful because it led to the establishment of a church in the camp. Used clothes and shoes were given out to the people at the end of outreach ",
 
 			images: [
 				{
@@ -246,7 +240,7 @@ const data = [
 			slug: 'igbira-camp-crusade',
 			featured: true,
 			description:
-				'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+				'Igbira Camp crusade was very intriguing as there were a lot of testimonies, healings and deliverance. At the end of the crusade many souls wer won into the kingdom of God',
 
 			images: [
 				{
@@ -282,7 +276,7 @@ const data = [
 			slug: 'commissioning-jesus-doing-good-campaign',
 			featured: false,
 			description:
-				'This campaing was commissioned on Saturday 8th December, 2018 by Bishop Dr. Fred Okhiomamhe, a spiritual father, mentor and coach to Rev. Harrison Ekhoegbe',
+				'This campaign was commissioned on Saturday 8th December, 2018 by Bishop Dr. Fred Okhiomamhe, a spiritual father, mentor and coach to Rev. Harrison Ekhoegbe',
 
 			images: [
 				{
@@ -320,48 +314,7 @@ const data = [
 						}
 					}
 				},
-				{
-					fields: {
-						file: {
-							url: crusade22
-						}
-					}
-				},
-				{
-					fields: {
-						file: {
-							url: crusade23
-						}
-					}
-				},
-				{
-					fields: {
-						file: {
-							url: crusade24
-						}
-					}
-				},
-				{
-					fields: {
-						file: {
-							url: crusade25
-						}
-					}
-				},
-				{
-					fields: {
-						file: {
-							url: crusade26
-						}
-					}
-				},
-				{
-					fields: {
-						file: {
-							url: crusade27
-						}
-					}
-				},
+
 				{
 					fields: {
 						file: {
@@ -409,4 +362,15 @@ const data = [
 		}
 	}
 ];
-export default data;
+
+export const contactInfo = {
+	contact: [
+		{
+			name:
+				'	Visit our office at Km 124, Benin Auchi Expressway, Beside Julius Berger, Aviele, Edo State, Nigeria',
+
+			phone: '+2348067178171',
+			Email: 'jesusdoinggoodcampaign@gmail.com'
+		}
+	]
+};

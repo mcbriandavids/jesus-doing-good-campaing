@@ -1,0 +1,12 @@
+.nav-link {
+	font-size: 1rem;
+	font-weight: bold;
+	transition: var(--mainTransition);
+}
+.nav-link:hover {
+	color: var(--mainRed) !important;
+}
+span img {
+	width: 100px;
+	height: 100px;
+}

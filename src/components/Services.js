@@ -8,7 +8,7 @@ export default class Services extends Component {
 			{
 				icon: <FaEye />,
 				title: 'Our Vision',
-				info: ' to.. harvest souls into Christ Kingdom through preaching of the true gospel of salvation'
+				info: ' to harvest as many souls into Christ Kingdom through preaching of the true gospel of salvation'
 			},
 
 			{
@@ -18,8 +18,8 @@ export default class Services extends Component {
 			},
 			{
 				icon: <FaAirFreshener />,
-				title: 'Features',
-				info: ' Church Plantings, Empowerment, Pastoral Conference '
+				title: 'Other Features',
+				info: ' Church Plantings, Empowerment, and Pastoral Conference '
 			}
 		]
 	};

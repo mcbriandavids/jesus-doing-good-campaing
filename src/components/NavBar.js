@@ -1,43 +1,47 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Navbar, Nav, Container, Image } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../images/logo.svg';
-import { FaAlignRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import '../styles/navbar.css';
 
-export default class NavBar extends Component {
-	state = {
-		isOpen: false
-	};
-	handleToggle = () => {
-		this.setState({ isOpen: !this.state.isOpen });
-	};
-	render() {
-		return (
-			<nav className='navbar'>
-				<div className='nav-center'>
-					<div className='nav-header'>
-						<Link to='/'>
-							<img src={logo} alt='Jesus Doing Good Campaign' />
-						</Link>
-						<button className='nav-btn' type='button' onClick={this.handleToggle}>
-							<FaAlignRight className='nav-icon' />
-						</button>
-					</div>
-					<ul className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}>
-						<li>
-							<Link to='/'>Home</Link>
-							<Link to='/about'>about us</Link>
-							<Link to='/contact'>contact</Link>
-							<Link to='/crusades'>crusades</Link>
-							<Link to='/join' className='link-one'>
-								join us
-							</Link>
-							<Link to='/support' className='link-two'>
-								support
-							</Link>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		);
-	}
-}
+const NavBar = () => {
+	return (
+		<>
+			<Navbar bg='light' variant='light' expand='lg' collapseOnSelect className='text-capitalize'>
+				<Container>
+					<LinkContainer to='/'>
+						<Navbar.Brand>
+							<Image src={logo} alt={'image'} className='w-100 h-100' />
+						</Navbar.Brand>
+					</LinkContainer>
+
+					<Navbar.Toggle aria-controls='basic-navbar-nav' />
+					<Navbar.Collapse id='basic-navbar-nav'>
+						<Nav className=' ml-auto '>
+							<LinkContainer to='/'>
+								<Nav.Link className='text-center mr-4'>Home</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to='/about'>
+								<Nav.Link className='text-center mr-4'>About Us</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to='/crusades'>
+								<Nav.Link className='text-center mr-4'>Crusades</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to='/contact'>
+								<Nav.Link className='text-center mr-4'>Contact</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to='/join'>
+								<Nav.Link className=' mr-2  text-center  '>Join</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to='/support'>
+								<Nav.Link className=' mr-2  text-center   '>Support</Nav.Link>
+							</LinkContainer>
+						</Nav>
+					</Navbar.Collapse>
+				</Container>
+			</Navbar>
+		</>
+	);
+};
+
+export default NavBar;

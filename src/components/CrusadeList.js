@@ -1,5 +1,6 @@
 import React from 'react';
 import Crusade from './Crusade';
+import '../styles/crusadeList.css';
 
 const CrusadeList = ({ crusades }) => {
 	if (crusades.length === 0) {

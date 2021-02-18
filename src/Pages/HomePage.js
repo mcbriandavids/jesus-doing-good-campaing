@@ -7,19 +7,19 @@ import { Link } from 'react-router-dom';
 
 const HomePage = () => {
 	return (
-		<div>
+		<>
 			<HomeHero>
 				<Banner
 					title='Jesus Doing Good Campaign'
 					subtitle='manifesting Acts 10:38 in villages, towns and cities all over Africa...'>
-					<Link to='/crusades' className='btn-primary'>
+					<Link to='/crusades' className='btn-primary text-decoration-none'>
 						browse crusades
 					</Link>
 				</Banner>
 			</HomeHero>
 			<Features />
 			<Services />
-		</div>
+		</>
 	);
 };
 

@@ -1,14 +1,18 @@
 import React from 'react';
-import logo from '../images/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
 		<div className='footer-container'>
-			<div className='container'>
-				<span>
-					{' '}
-					<img src={logo} alt='JDG' /> &copy; 2020{' '}
-				</span>
+			<div className=' footer text-center text-capitalize mt-4   '>
+				<p className='footer-text'>
+					<Link to='/' className='text-decoration-none text-dark'>
+						Jesus Doing Good Campaign &copy; 2021
+					</Link>
+				</p>{' '}
+				<small className=' text-secondary text-capitalize'>
+					Designed & built: <strong>BrianMartinez Tech</strong>{' '}
+				</small>
 			</div>
 		</div>
 	);
